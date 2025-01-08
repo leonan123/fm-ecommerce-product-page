@@ -24,7 +24,7 @@ export function ProductGallery() {
         <span class='group inline-block size-[88px] overflow-hidden rounded-2xl ${className} hidden lg:block'>
           <img 
             class="size-full object-cover transition-opacity group-hover:opacity-50"
-            src="${product.rootImagesPath}/${thumbnail}" alt=""
+            src="${product.rootImagesPath}${thumbnail}" alt=""
           />
         </span>
       `
@@ -80,7 +80,7 @@ export function ProductGallery() {
           <Dialog.Root>
             <Dialog.Trigger className="outline-none" disabled={isMobile}>
               <img
-                src={`${product.rootImagesPath}/${image}`}
+                src={`${product.rootImagesPath}${image}`}
                 alt=""
                 className="size-full object-cover"
               />

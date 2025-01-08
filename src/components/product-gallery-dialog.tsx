@@ -19,7 +19,7 @@ export function ProductGalleryDialog() {
         <span class='group inline-block size-[88px] overflow-hidden rounded-2xl ${className}'>
           <img 
             class="size-full object-cover transition-opacity group-hover:brightness-75"
-            src="${product.rootImagesPath}/${thumbnail}" alt=""
+            src="${product.rootImagesPath}${thumbnail}" alt=""
           />
         </span>
       `
@@ -67,7 +67,7 @@ export function ProductGalleryDialog() {
             key={image}
           >
             <img
-              src={`${product.rootImagesPath}/${image}`}
+              src={`${product.rootImagesPath}${image}`}
               alt=""
               className="size-full object-cover"
             />
