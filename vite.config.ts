@@ -5,10 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/fm-ecommerce-product-page/',
+  publicDir: 'src/assets/images',
   build: { 
     rollupOptions: {
       output: {
-        assetFileNames: 'src/assets/[name].[hash][extname]'
+        assetFileNames: 'src/assets/images/[name].[hash][extname]'
       },
     },
   },
