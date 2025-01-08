@@ -26,7 +26,7 @@ export function CartItem({ product }: CartItemProps) {
     <div key={product.id} className="flex items-center gap-4">
       <img
         className="size-[50px] rounded-md"
-        src={`${product.rootImagesPath}/${product.featuredImagePath}`}
+        src={`${product.rootImagesPath}${product.featuredImagePath}`}
         alt={product.name}
       />
 
