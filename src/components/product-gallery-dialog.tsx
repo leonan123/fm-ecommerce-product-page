@@ -16,9 +16,9 @@ export function ProductGalleryDialog() {
       const thumbnail = product.gallery[index].thumbnail
 
       return `
-        <span class='group inline-block size-[88px] overflow-hidden rounded-2xl ${className}'>
+        <span class='group inline-block size-[88px] overflow-hidden rounded-2xl bg-white ${className}'>
           <img 
-            class="size-full object-cover transition-opacity group-hover:brightness-75"
+            class="size-full object-cover transition-opacity group-hover:opacity-70"
             src="${product.rootImagesPath}${thumbnail}" alt=""
           />
         </span>
