@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination {
+  @apply flex justify-center gap-8;
+}
+
+.swiper-pagination-bullet-active {
+  @apply border-2 border-orange-600;
+}
+
+.swiper-pagination-bullet-active img {
+  @apply opacity-30;
+}
+
+.swiper.swiper-fade {
+  @apply overflow-visible;
+}
